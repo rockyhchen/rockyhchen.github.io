@@ -1,0 +1,457 @@
+html, body {
+	background-color: #fff;	
+	position: relative;
+	height:100%;
+    padding-top:0px;
+}
+
+/* BootStrap Overide */
+
+/*
+.container {
+	padding: 0px;
+}
+
+.row {
+	padding: 0px;
+}
+*/
+
+.container {
+	max-width: 1200px;
+}
+.col-sm-6 {
+	padding: 0px;
+}
+
+
+.nopadding {
+	padding: 0px;
+}
+
+nav.navbar.navbar-default {
+	border: 0px;
+	margin: 0px;
+}
+
+/* BootStrap Ends */
+
+/* navbar */
+
+.logo {
+	max-height: 20px;
+	margin: 12px 0px 12px 30px;
+}
+
+nav.navbar {
+	min-height: 80px;
+	background-color: #fff;
+}
+
+.navbar-default {
+    background-color: #fff;
+}
+/* title */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #a7a7a7;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #bdbdbd;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333333;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #fff;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+.nav>li>a {
+	padding: 30px;
+	font-family: "Gotham-Light";
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 12px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #717171;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #717171;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #717171;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #bdbdbd;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #717171;
+    }
+}
+/* Nav Bar Ends */
+
+/* Type Treatment */
+
+a:link {
+    text-decoration: none;
+	color: #717171;
+}
+
+a:visited {
+    text-decoration: none;
+	color: #717171;
+}
+
+a:hover {
+    text-decoration: none;
+	color: #222;
+}
+
+a:active {
+    text-decoration: none;
+	color: #717171;
+}
+
+a {
+	color: #717171;
+}
+
+@font-face {
+font-family: ProximaNova-Thin;
+src: url("../fonts/ProximaNova-Thin.otf") format("opentype");
+}
+
+@font-face {
+font-family: ProximaNova-Light;
+src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+
+@font-face {
+font-family: ProximaNova-Regular;
+src: url("../fonts/ProximaNova-Regular.otf") format("opentype");
+}
+
+
+@font-face {
+font-family: ProximaNova-Semibold;
+src: url("../fonts/ProximaNova-Semibold.otf") format("opentype");
+}
+
+@font-face {
+font-family: Gotham-Light;
+src: url("../fonts/Gotham-Light.ttf") format("opentype");
+}
+
+@font-face {
+font-family: Gotham-Book;
+src: url("../fonts/Gotham-Book.ttf") format("opentype");
+}
+
+p {
+	font-family: "ProximaNova-Light";
+	font-size: 16px;
+	color: #717171;
+	line-height: 1.6em;
+	margin: 0px;
+}
+
+p.bold, span.bold {
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	color: #444444;
+	margin-bottom: 8px;
+	display: block;
+}
+
+p.expbold, span.expbold {
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	color: #444444;
+	margin-bottom: 0px;
+	display: block;
+}
+/*
+	border-left: 1px solid;
+	border-color: #717171;
+	padding: 0px 0px 0px 10px;
+*/
+}
+
+
+a.underline {
+	font-family: "ProximaNova-Light";
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+
+p.header{
+	font-family: "Gotham-Light";
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 0px 0px 30px 0px;
+}
+
+p.exphead {
+	font-family: "Gotham-Book";
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 400;
+	font-size: 10px;
+	opacity: 0.4;
+	margin: 30px 0px 30px 0px;
+}
+
+p.expbot {
+	margin: 0px 0px 30px 0px;
+}
+
+p.light {
+	color: #717171;
+}
+
+/* Type Treatment Ends */
+
+div.container.projects {
+	padding: 95px 0px 60px 0px;
+}
+
+.experience {
+	padding: 0px 0px 90px 0px;
+}
+
+.sayhello {
+	padding: 0px 0px 120px 0px;
+
+}
+
+p.header{
+	padding-top: 60px;
+}
+
+.sidebar li a {
+	color: #717171;
+	font-family: "ProximaNova-Light";
+	padding: 10px 0px 10px 20px;
+	text-transform: none;
+	letter-spacing: 0px;
+	background-color: transparent;
+	border-left: 1px solid;
+	border-color: #fff;
+	font-size: 14px;
+
+}
+
+.sidebar li a:hover {
+	font-family: "ProximaNova-Light";
+	padding: 10px 0px 10px 20px;
+	text-transform: none;
+	letter-spacing: 0px;
+	background-color: transparent;
+}
+
+.sidebar li a:active {
+	font-family: "ProximaNova-Light";
+	padding: 10px 0px 10px 20px;
+	text-transform: none;
+	letter-spacing: 0px;
+	background-color: transparent;
+	border-left: 1px solid;
+	border-color: #fff;
+}
+
+.sidebar li a:focus {
+	font-family: "ProximaNova-Light";
+	padding: 10px 0px 10px 20px;
+	text-transform: none;
+	letter-spacing: 0px;
+	background-color: transparent;
+	border-left: 1px solid;
+}
+
+
+.sidebar {
+	padding: 200px 0px 0px 30px;
+}
+
+.stream > img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.stream {
+		padding-top: 130px;
+		padding-bottom: 90px;
+}
+
+
+.affix {
+  padding:0px;
+  -webkit-transition:padding 0.2s linear;
+  -moz-transition:padding 0.2s linear;  
+  -o-transition:padding 0.2s linear;         
+  transition:padding 0.2s linear;  
+
+}
+
+.affix-top {
+  padding-top:15px;
+  padding-bottom:15px;
+  -webkit-transition:padding 0.5s linear;
+  -moz-transition:padding 0.5s linear;  
+  -o-transition:padding 0.5s linear;         
+  transition:padding 0.5s linear;
+}
+
+p..affix-top {
+	font-size: 30px;
+}
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 80px;
+
+  /* Dimensions */
+  width: 100%;
+  height: 1px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: #999;
+	
+  z-index: 1240;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: #999;
+}
+
+progress::-moz-progress-bar {
+  background-color: #999;
+
+}
+
+
+.sidebar li {
+	background-color: transparent;
+	border-left: 1px solid;
+	color: #fff;
+}
+
+li.active {
+	background-color: transparent;
+	border-left: 1px solid;
+	color: #717171;
+}
+
+.sidebar li a:focus {
+	background-color: transparent;
+	border-left: 1px solid;
+	border-color: #fff;
+}
+
+
+.preview {
+  -webkit-transition: all 0.25s ease;
+     -moz-transition: all 0.25s ease;
+       -o-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+}
+ 
+.preview:hover {
+  opacity: 0.5;
+}
+
+.stream-title {
+	padding: 0px 0px 30px 0px;
+	letter-spacing: px;
+	font-size: 28px;
+	color: #444;
+	font-family: "ProximaNova-Thin";
+	
+}
+
+.stream-subtitle {
+	padding: 12px 0px 6px 0px;
+	text-transform: uppercase;
+	font-family: "Gotham-Book";
+	color: #717171;
+	opacity: 0.4;
+	letter-spacing: 2px;
+	font-size: 10px;
+}
+
+.stream-body{
+	padding-top: 0px;
+}
+
+.stream-title, .stream-subtitle, .stream-body {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+
+img.app-screen {
+	max-width: 424px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
