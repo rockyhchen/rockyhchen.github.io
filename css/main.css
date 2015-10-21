@@ -18,7 +18,7 @@ html, body {
 */
 
 .container {
-	max-width: 1200px;
+	max-width: 900px;
 }
 .col-sm-6 {
 	padding: 0px;
@@ -95,10 +95,12 @@ nav.navbar {
 
 .nav>li>a {
 	padding: 30px;
-	font-family: "Gotham-Light";
+	font-family: 'Nunito', sans-serif;
+	font-style: normal;
+	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 4px;
-	font-size: 12px;
+	font-size: 10px;
 }
 
 .nav>li>a:focus, .nav>li>a:hover, .nav>li>a:hover {
@@ -108,14 +110,14 @@ nav.navbar {
 
 /* mobile version */
 .navbar-default .navbar-toggle {
-    border-color: #717171;
+    border-color: #9e9e9e;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #717171;
+    background-color: #9e9e9e;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #717171;
+    background-color: #9e9e9e;
 }
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -123,7 +125,7 @@ nav.navbar {
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #717171;
+        color: #9e9e9e;
     }
 }
 /* Nav Bar Ends */
@@ -132,26 +134,26 @@ nav.navbar {
 
 a:link {
     text-decoration: none;
-	color: #717171;
+	color: #9e9e9e;
 }
 
 a:visited {
     text-decoration: none;
-	color: #717171;
+	color: #9e9e9e;
 }
 
 a:hover {
     text-decoration: none;
-	color: #222;
+	color: #444;
 }
 
 a:active {
     text-decoration: none;
-	color: #717171;
+	color: #9e9e9e;
 }
 
 a {
-	color: #717171;
+	color: #9e9e9e;
 }
 
 @font-face {
@@ -178,34 +180,40 @@ src: url("../fonts/ProximaNova-Semibold.otf") format("opentype");
 
 @font-face {
 font-family: Gotham-Light;
-src: url("../fonts/Gotham-Light.ttf") format("opentype");
+src: url("../fonts/ProximaNova-Semibold.otf") format("opentype");
 }
 
 @font-face {
 font-family: Gotham-Book;
-src: url("../fonts/Gotham-Book.ttf") format("opentype");
+src: url("../fonts/ProximaNova-Semibold.otf") format("opentype");
 }
 
 p {
-	font-family: "ProximaNova-Light";
-	font-size: 16px;
-	color: #717171;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 14px;
+	color: #888;
 	line-height: 1.6em;
 	margin: 0px;
 }
 
 p.bold, span.bold {
-	font-family: "ProximaNova-Semibold";
-	font-size: 16px;
-	color: #444444;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	color: #666;
 	margin-bottom: 8px;
-	display: block;
+	display: inline-block;
 }
 
 p.expbold, span.expbold {
-	font-family: "ProximaNova-Semibold";
-	font-size: 16px;
-	color: #444444;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	color: #666;
 	margin-bottom: 0px;
 	display: block;
 }
@@ -217,15 +225,27 @@ p.expbold, span.expbold {
 }
 
 
-a.underline {
-	font-family: "ProximaNova-Light";
-	font-size: 16px;
+a.underline :link {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+a.underline:link {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 14px;
 	text-decoration: underline;
 }
 
 
 p.header{
-	font-family: "Gotham-Light";
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 600;
 	color: #000;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -233,10 +253,11 @@ p.header{
 }
 
 p.exphead {
-	font-family: "Gotham-Book";
+	font-family: "Nuinto",sans-serif;
+	font-style: normal;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 4px;
-	font-weight: 400;
 	font-size: 10px;
 	opacity: 0.4;
 	margin: 30px 0px 30px 0px;
@@ -253,7 +274,8 @@ p.light {
 /* Type Treatment Ends */
 
 div.container.projects {
-	padding: 95px 0px 60px 0px;
+	padding: 95px 0px 120px 0px;
+	max-width: 800px;
 }
 
 .experience {
@@ -271,19 +293,23 @@ p.header{
 
 .sidebar li a {
 	color: #717171;
-	font-family: "ProximaNova-Light";
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
 	padding: 10px 0px 10px 20px;
 	text-transform: none;
 	letter-spacing: 0px;
 	background-color: transparent;
 	border-left: 1px solid;
 	border-color: #fff;
-	font-size: 14px;
+	font-size: 10px;
 
 }
 
 .sidebar li a:hover {
-	font-family: "ProximaNova-Light";
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
 	padding: 10px 0px 10px 20px;
 	text-transform: none;
 	letter-spacing: 0px;
@@ -291,7 +317,9 @@ p.header{
 }
 
 .sidebar li a:active {
-	font-family: "ProximaNova-Light";
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
 	padding: 10px 0px 10px 20px;
 	text-transform: none;
 	letter-spacing: 0px;
@@ -301,7 +329,9 @@ p.header{
 }
 
 .sidebar li a:focus {
-	font-family: "ProximaNova-Light";
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
 	padding: 10px 0px 10px 20px;
 	text-transform: none;
 	letter-spacing: 0px;
@@ -311,7 +341,7 @@ p.header{
 
 
 .sidebar {
-	padding: 200px 0px 0px 30px;
+	padding: 150px 0px 0px 30px;
 }
 
 .stream > img {
@@ -396,7 +426,7 @@ progress::-moz-progress-bar {
 
 li.active {
 	background-color: transparent;
-	border-left: 1px solid;
+/*	border-left: 1px solid;*/
 	color: #717171;
 }
 
@@ -420,22 +450,25 @@ li.active {
 }
 
 .stream-title {
-	padding: 0px 0px 30px 0px;
-	letter-spacing: px;
+	padding: 0px 0px 10px 0px;
+	letter-spacing: 0px;
 	font-size: 28px;
 	color: #444;
-	font-family: "ProximaNova-Thin";
-	
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;	
 }
 
 .stream-subtitle {
 	padding: 12px 0px 6px 0px;
 	text-transform: uppercase;
-	font-family: "Gotham-Book";
 	color: #717171;
 	opacity: 0.4;
 	letter-spacing: 2px;
 	font-size: 10px;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 600;
 }
 
 .stream-body{
@@ -454,4 +487,29 @@ img.app-screen {
 	margin-left: auto;
 	margin-right: auto;
 	
+}
+
+ul li {
+	color: #717171;
+}
+
+ul {
+	padding-left: 120px;
+}
+
+.table {
+	padding: 10px;
+	margin: 0px;
+}
+
+table, th, td {
+    border: 1px solid #cccccc;
+}
+
+td {
+	vertical-align: top;
+}
+
+table {
+	margin: 25px 0px 25px 0px;
 }

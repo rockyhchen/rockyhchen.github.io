@@ -15,12 +15,14 @@ $(document).on('ready', function() {
       max, value;
 
   /* Set the max scrollable area */
-  max = docHeight - winHeight;
-  progressBar.attr('max', max);
+
 
   $(document).on('scroll', function(){
      value = $(window).scrollTop();
      progressBar.attr('value', value);
+	 max = docHeight - winHeight;
+	 progressBar.attr('max', max);
+	 console.log(max);
   });
 
 
