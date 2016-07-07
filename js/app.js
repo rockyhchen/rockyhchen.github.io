@@ -20,7 +20,7 @@ $(document).on('ready', function() {
   $(document).on('scroll', function(){
      value = $(window).scrollTop();
      progressBar.attr('value', value);
-	 max = docHeight - winHeight;
+	 max = $(document).height() - $(window).height();
 	 progressBar.attr('max', max);
 	 console.log(max);
   });
@@ -46,9 +46,8 @@ $('>li a').click(function (event) {
     return false;
 });
 
-
-
 });
 
-
-
+$('img').click(function() {
+	alert("hi");
+}

@@ -2,60 +2,339 @@
 
 <html>
 
-    <head>
-        
-        <meta charset=”utf-8”> <!-- allows special characters used in BootStrap to be parsed properly -->
-        <title>Rocky Chen</title>
-
-		        <!-- BootStrap -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		
-		<link rel="stylesheet" href="css/main.css">
-		
-   
-    </head>
-    
-    <body data-spy="scroll" data-target="#sidebar">
-		<div id="nav">
-<nav class="navbar navbar navbar-fixed-top" data-spy="affix" data-offset-top="100">
-	<div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-      		</button>
-      		<a class="navbar-brand" href="#"><img class="logo" src="../../images/logo.png"></a>
-    	</div>
-
-    	<!-- Collect the nav links, forms, and other content for toggling -->
-    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      		<ul class="nav navbar-nav navbar-right">
-        		<li><a class="nav" href="#projects">Projects</a></li>
-        		<li><a class="nav" href="../../index.html#experience">Experience</a></li>
-        		<li><a class="nav" href="#sayhello">Say Hello</a></li>
-      		</ul>
-    	</div><!-- /.navbar-collapse -->
-  	</div><!-- /.container-fluid -->
-</nav>
-</div>
-<section>
-
-<img src="images/box.png">
-
-
-        -->
-        
-        <!-- JavaScript -->
-<!--
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
--->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+<head>
+	<meta charset=”utf-8”> <!-- allows special characters used in BootStrap to be parsed properly -->
+	<title>Rocky Chen</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,200,300' rel='stylesheet' type='text/css'>
+	<script src="https://use.typekit.net/cog6pmn.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link rel="stylesheet" href="css2/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css2/main.css">
+	<script src="js2/modernizr.custom.js"></script>
 	
-    </body>
+	 <!-- Load local jQuery -->
+    <script src="libs/jquery-loader.js"></script>
+
+    <!-- Load local lib and tests -->
+    <link rel="stylesheet" href="src/remodal.css">
+    <link rel="stylesheet" href="src/remodal-default-theme.css">
+    <script src="src/remodal.js"></script>
+    <script src="remodal_test.js"></script>
+    <style>
+      .remodal-overlay.without-animation.remodal-is-opening,
+      .remodal-overlay.without-animation.remodal-is-closing,
+      .remodal.without-animation.remodal-is-opening,
+      .remodal.without-animation.remodal-is-closing,
+      .remodal-bg.without-animation.remodal-is-opening,
+      .remodal-bg.without-animation.remodal-is-closing {
+        animation: none;
+      }
+    </style>
+
+</head>
+	
+<body id="top">
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+			<a class="navbar-brand name scrollup" href="#">Rocky Chen</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav navbar-right">
+			 <li><a class="name" href="#projects">Projects</a></li>
+			 <li><a class="name" href="#experience">Experience</a></li>
+			 <li><a class="name" href="#say-hello">Say Hello</a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="intro">
+		<div class="container">
+			<div class="row no-gutter">
+				<div class="col-sm-7">
+					<p class="fade">Hello there,<br><br>
+					I'm Rocky. Product designer from Toronto interning at <a class="coral-link" href="https://www.facebook.com/" target="_blank">Facebook</a> this summer.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="projects">
+				<ul class="grid cs-style-3">
+						<li>
+							<figure>
+								<a href="#" data-remodal-target="eee"><img src="eee/grid.jpg"></a>
+								<figcaption>
+									<h3>EEE</h3>
+									<span>
+										<p class="description">An affordable home tinnitus therapy</p>
+										<ul class="tags">
+											<li>Product Design</li>
+											<li>User Research</li>
+											<li>iOs</li>
+										</ul>
+									</span>
+									<a class="btn" href="#" data-remodal-target="eee">See more</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="#" data-remodal-target="sling"><img src="sling/grid.png"></a>
+								<figcaption>
+									<h3>Sling</h3>
+									<span>
+										<p class="description">A location based file sharing platform</p>
+										<ul class="tags">
+											<li>Product Design</li>
+											<li>User Testing</li>
+											<li>Material Design</li>
+										</ul>
+									</span>
+									<a class="btn" href="#" data-remodal-target="sling">See more</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="#" data-remodal-target="htn"><img src="hackthenorth/grid.png"></a>
+								<figcaption>
+									<h3>Hack the North</h3>
+									<span>
+										<p class="description">Canada's largest hackathon</p>
+										<ul class="tags">
+											<li>Product Design</li>
+											<li>Brand Development</li>
+											<li>Web Design</li>
+										</ul>
+									</span>
+									<a class="btn" href="#" data-remodal-target="htn">See more</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a href="#" data-remodal-target="lsh"><img src="lsh/grid.png"></a>
+								<figcaption>
+									<h3>Leadership Starts Here</h3>
+									<span>
+										<p class="description">The University of Waterloo's Leadership Conference</p>
+										<ul class="tags">
+											<li>Brand Development</li>
+											<li>Print Design</li>
+											<li>Graphic Design</li>
+										</ul>
+									</span>
+									<a class="btn" href="#" data-remodal-target="lsh">See more</a>
+								</figcaption>
+							</figure>
+						</li>
+	</div>
+		
+<!-- eee ----------------------------------------------------------------->
+<div class="remodal" data-remodal-id="eee">
+
+	<div class="cover-eee">
+		<img class="cover" src="eee/cover.jpg" style="visibility:hidden">
+	</div>
+	<div class="portfolio-stream container">
+		<a data-remodal-action="close" class="remodal-close"><i class="fa fa-times"></i></a>
+		<p class="folio-header">EEE</p>
+		<p class="folio-sub">Affordable home tinnitus therapy</p>
+		<div class="underline-centre" style="border-color: #0fc4b0;"></div>
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body">Tinnitus is a condition characterized by ringing, or other noises that appear to be originating in the ear. The nuisance makes sleeping more difficult and disrupts times of concentration. Although there is currently no cure, those who suffer from tinnitus may undergo expensive therapy to train their brain to ignore the disability. EEE was created to provide cheap at-home treatment. </p></div>
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">EEE is an app for all</span><br>What if you don't have tinnitus? There are still major health benefits to using EEE. It is a mobile application that aims to improve the quality of life during waking and sleeping hours. Sleeping better can greatly increase an individual's immune system, mood, and concentration. Many studies have shown the advantages of listening to ambient noise while studying, working or relaxing.</p></div>		
+		<img class="col-md-12 folio-img" src="eee/tone.jpg">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">Find your Tinnitus Tone with EEE</span><br>Use the sliders to find a frequency that best matches your tinnitus. Once selected, EEE will craft a personalized white noise that will dull your tinnitus and lessen the distress.</p></div>
+		
+		<img class="col-md-12 folio-img" src="eee/phone-watch2.png">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">Getting a Better Night's Rest</span><br>Using your phone's accelerometer and your smart watch's heart rate monitor, EEE can detect your deepness in sleep. Using this information, EEE can adjust the volume of your tinnitus tone until you fall in REM cycles. Long-term plans will be created to slowly reduce your reliance on the tone and allow you to reach REM cycles independently.</p></div>
+		<img class="col-md-12 folio-img" src="eee/alarm-animation-v2.gif">
+		<img class="col-md-12 folio-img" src="eee/flatvsskue-03.jpg">
+		<img class="col-md-12 folio-img" src="eee/alarm-affordance.gif">
+		<img class="col-md-12 folio-img" src="eee/icons-prelim.jpg">
+		<img class="col-md-12 folio-img" src="eee/icons-rounding.jpg">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">Provincial UI Competition</span><br>The Canadian Design Exchange's "CONNECT: Enabling Change Post-Secondary School Design Competition" explores design that is usable to the greatest number of people, to the largest extent possible, regardless of their age or ability, across all design disciplines. Ideas that removed barriers for people with disabilities and promote greater inclusion were welcome. I was happy to have been awarded first place in the User Interface/Interactive Design category!</p></div>
+		<img class="col-md-12 folio-img" src="eee/design-exchange.jpg">
+	</div>
+</div>
+
+<!-- Sling ----------------------------------------------------------------->
+
+		
+<div class="remodal" data-remodal-id="sling">
+	<div class="cover-sling">
+		<img class="cover" src="sling/cover.png" style="visibility:hidden">
+	</div>
+	<div class="portfolio-stream container">
+		<a data-remodal-action="close" class="remodal-close"><i class="fa fa-times"></i></a>
+		<p class="folio-header">Sling</p>
+		<p class="folio-sub">A location based file sharing platform</p>
+		<div class="underline-centre" style="border-color: #ee5254;"></div>
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body">Sling is a location based file sharing platform that makes sharing faster than ever before. It takes seconds for a file to be shared with hundreds of people at a specified location.</p></div>
+		<img class="col-md-12 folio-img" src="sling/appflow.png">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">Downloading</span><br>The initial default screen featured a list of "slings" the user may "catch" if they were in the geographial proximity. A user would simply tap download to obtain the file or tap the floating action icon to upload one. However, when the buttons overlapped it made it difficult for the user to select the intended action.</p></div>
+		
+		<img class="col-md-12 folio-img" src="sling/download-button.png">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body">The solution was to use a swipe action to download files. Swiping a sling will reveal a progress box where you may track your download. This motion was to mimic the motion of "slinging" an object; linking the action of using the product to it's brand identity. Motion versus tap was how Sling was able to differentiate between these two actions.</p></div>
+		<img class="col-md-12 folio-img" src="sling/downloading.png">
+		<img class="col-md-12 folio-img" src="sling/upload.png">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">Consumable language</span><br>From light colours, rounded corners, to friendly words, Sling presents itself as a delightful and welcoming product. In the first iterations, each Sling would be accompanied by a timer that would count down it's duration to the second. This place a sense of urgency which was unwanted. Additionally, this information was not actually accurate to the second; this disconnect can be quite frustrating. Instead, I opted for timers that rounded to the hour and minute - which then turned to "expiring soon" and finally, "expiring now".</p></div>
+		<img class="col-md-12 folio-img" src="sling/expiration.png">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">Shh, it's a secret!</span><br>I can't even remeber what I had for dinner last night, how am I supposed to remember my different Slings if I don't name them properly? The preview makes that easy, but we can't have a preview for a private photo now, can we? To solve this solution, Sling will take the image, file, or website and blur it out. It will then add a white lock icon to further obstruct the view. The familiar colours now hint users what the original file was, without giving away the file to the public.</p></div>
+		<img class="col-md-12 folio-img" src="sling/privacy.png">
+	</div>
+</div>
+		
+<!-- HTN ----------------------------------------------------------------->
+<div class="remodal" data-remodal-id="htn">
+	<div class="cover-htn">
+		<img class="cover" src="hackthenorth/cover.png" style="visibility:hidden">
+	</div>
+	<div class="portfolio-stream container">
+		
+		<p class="folio-header">Hack the North</p>
+		<p class="folio-sub">Canada's Largest Hackathon</p>
+		<div class="underline-centre" style="color:#41c3f1"></div>
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body">A hackathon is an event students for teams around a problem or idea and collaboratively code a solution from scratch in just 36 hours. These projects can be made to address a particular social issue or they could just be something fun and challenging.</p></div>
+		<img class="col-md-12 folio-img" src="hackthenorth/personas.png">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">Downloading</span><br>The initial default screen featured a list of "slings" the user may "catch" if they were in the geographial proximity. A user would simply tap download to obtain the file or tap the floating action icon to upload one. However, when the buttons overlapped it made it difficult for the user to select the intended action.</p></div>
+		
+		<img class="col-md-12 folio-img" src="hackthenorth/red-route-analysis.png">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body">The solution was to use a swipe action to download files. Swiping a sling will reveal a progress box where you may track your download. This motion was to mimic the motion of "slinging" an object; linking the action of using the product to it's brand identity. Motion versus tap was how Sling was able to differentiate between these two actions.</p></div>
+		<img class="col-md-12 folio-img" src="hackthenorth/navbar.png">
+		<img class="col-md-12 folio-img" src="hackthenorth/snapchat.png">
+		<img class="col-md-12 folio-img" src="hackthenorth/sponsor-package.png">
+	</div>
+</div>
+		
+<!--
+<div class="remodal" data-remodal-id="sling">
+		<a data-remodal-action="close" class="remodal-close">Back</a>
+</div>
+-->
+
+<!-- LSH ----------------------------------------------------------------->
+<div class="remodal" data-remodal-id="lsh">
+	<div class="cover-lsh">
+		<img class="cover" src="lsh/cover.png" style="visibility:hidden">
+	</div>
+	<div class="portfolio-stream container">
+		
+		<p class="folio-header">LSH</p>
+		<p class="folio-sub">Leadership Starts Here Conference</p>
+		<div class="underline-centre"></div>
+		<div class="col-md-9 col-md-offset-1"><p class="folio-body">LSH Conference at the University of Waterloo brings together 200 of the university's most engaged student leaders for a day of dynamic workshops and inspiring keynote speakers. I was asked to produce a complete rebrand in preparation for the 2014 conference. It needed to appeal to both contemporary students and the conservative faculty and staff. It proved to be difficult to please both target audiences; one side favored vibrant, exhilarating graphics while the other insisted upon cautious, conventional designs that embodied the school's scholarly appearance.</p></div>
+		<img class="col-md-12 folio-img" src="lsh/1.png">
+		<img class="col-md-12 folio-img" src="lsh/2.png">
+		<img class="col-md-12 folio-img" src="lsh/3.png">
+		<img class="col-md-12 folio-img" src="lsh/4.png">
+		<img class="col-md-12 folio-img" src="lsh/5.png">
+		<img class="col-md-12 folio-img" src="lsh/6.png">
+		<img class="col-md-12 folio-img" src="lsh/7.jpg">
+		<div class="col-md-8 col-md-offset-2"><p class="folio-body"><span class="folio-bold">Ideas Start Here</span><br>The initial default screen featured a list of "slings" the user may "catch" if they were in the geographial proximity. A user would simply tap download to obtain the file or tap the floating action icon to upload one. However, when the buttons overlapped it made it difficult for the user to select the intended action.</p></div>
+		<img class="col-md-12 folio-img" src="lsh/8.jpg">
+		<img class="col-md-12 folio-img" src="lsh/9.jpg">
+		<img class="col-md-12 folio-img" src="lsh/10.jpg">
+		<img class="col-md-12 folio-img" src="lsh/11.jpg">
+		<img class="col-md-12 folio-img" src="lsh/12.jpg">
+
+	</div>
+</div>
+		
+	<div id="experience">
+		<div class="container">
+				<div class="row no-gutter">
+					<div class="col-md-8 col-md-offset-2"><p class="header">Experience</p></div>
+					<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
+				</div>
+				<div class="row no-gutter">
+					<div class="col-md-2 col-md-offset-2"><p class="sub-header">work</p></div>
+					
+					<div class="col-md-7"><p class="title">Product Design Intern</p></div>
+					<div class="col-md-7 col-md-offset-4"><p class="sub-title"><a class="lightgrey-link" href="https://www.facebook.com/" target="_blank">Facebook</a> starting May 2016</p></div>
+					
+					<div class="col-md-7 col-md-offset-4"><p class="title">Product Designer and Brand Manager</p></div>
+					<div class="col-md-7 col-md-offset-4"><p class="sub-title"><a class="lightgrey-link" href="http://hackthenorth.com/" target="_blank">Hack the North</a> from Jan 2015 to Present</p></div>
+					
+					<div class="col-md-7 col-md-offset-4"><p class="title">UX + UI Design Intern</p></div>
+					<div class="col-md-7 col-md-offset-4"><p class="sub-title"><a class="lightgrey-link" href="http://www.scribblelive.com/" target="_blank">ScribbleLive</a> from April 2015 to Aug 2015</p></div>
+
+					
+					<div class="col-md-2 col-md-offset-2"><p class="sub-header">honours</p></div>
+					
+					<div class="col-md-7"><p class="title">Provincial User Interface Competition</p></div>
+					<div class="col-md-7 col-md-offset-4"><p class="sub-title">First place by <a class="lightgrey-link" href="http://www.dx.org/" target="_blank">Design Exchange</a> and <a class="lightgrey-link" href="http://www.ontario.ca/page/serviceontario" target="_blank">Service Ontario</a> and from 2015</p></div>
+					
+					<div class="col-md-7 col-md-offset-4"><p class="title">National Industrial Design Competition</p></div>
+					<div class="col-md-7 col-md-offset-4"><p class="sub-title">First place by <a class="lightgrey-link" href="http://www.sears.ca/" target="_blank">Sears Canada</a> and <a class="lightgrey-link" href="http://www.dx.org/" target="_blank">Design Exchange</a> from 2013</p></div>
+					
+					<div class="col-md-7 col-md-offset-4"><p class="title">George J. Klein Medalist</p></div>
+					<div class="col-md-7 col-md-offset-4"><p class="sub-title">by the <a class="lightgrey-link" href="http://www.nrc-cnrc.gc.ca/eng/" target="_blank">National Research Council of Canada</a> from 2013</p></div>
+				</div>
+			<div class="centre"><a class="btn" href="https://www.linkedin.com/in/rockyhchen" target="_blank">See more on LinkedIn</a></div>
+		</div>
+	</div>
+
+		<div id="say-hello" class="row">
+		<div class="container">
+				<div class="row no-gutter">
+					<div class="col-md-8 col-md-offset-2"><p class="header">Say Hello</p></div>
+					<div class="col-md-8 col-md-offset-2"><div class="underline"></div></div>
+					<div class="col-md-8 col-md-offset-2"><p>Say hello at <a class="coral-link" href="mailto:rockyhchen@gmail.com?Subject=Saying%20Hello">rockyhchen@gmail.com</a> or connect on <a class="coral-link" href="https://www.linkedin.com/in/rockyhchen" target="_blank">LinkedIn</a>.</p></div>
+
+            </div>
+		
+<!--
+				<div class="centre">
+					<span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" id="input-4" />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+							<span class="input__label-content input__label-content--hoshi">Name</span>
+						</label>
+					</span>
+					<br>
+					<span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" id="input-4" />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+							<span class="input__label-content input__label-content--hoshi">Email</span>
+						</label>
+					</span>
+					<br>
+					<span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" id="input-4"/>
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+							<span class="input__label-content input__label-content--hoshi">Message</span>
+						</label>
+					</span>
+					<br><br><br>
+					<a class="btn" href="https://www.linkedin.com/in/rockyhchen" target="_blank">Let's connect!</a>
+					<p class="btn-undertext">Or we can connect on <a class="lightgrey-link" href="https://www.linkedin.com/in/rockyhchen" target="_blank">LinkedIn</a> instead</p>
+				</div>
+-->
+				</div>
+<!--			<div class="centre"><a class="btn" href="#">Let's Connect</a></div>-->
+
+		</div>
+		</div>
+	
+	
+	<script src="js2/jquery.min.js"></script>
+	<script src="js2/bootstrap.min.js"></script>
+	<script src="js2/app.js"></script>
+	<script src="js2/toucheffects.js"></script>
+</body>
+	
 </html>
